@@ -20,6 +20,7 @@
 	<!-- main -->
 	<div class="main">
 		<h2>A step by step walk through of your first HTML page</h2>
+
 		<img src="./stock1/main1.png" alt="A walk through">
 		<p>HTML is short for Hyper Text Markup Language. Basically it's the "code" behind every web page- even as this one.
 		   If you are just beginning to learn HTML, let us tell you that it's fairly a easy task. HTML, without styling, can't do anything more that setting a layout, drawing a table or creating frames - but it is handy as it helps in structuring the content, which is important when you sit down to add style to your HTML.   
@@ -47,8 +48,105 @@
 		</p>
 		<p>The second example tag is of the loner tag- as in they dont need a closing tag to funtion. Although its not important these types of
 			tags are often written as &lt;tag/> to make the debugging of the code easier.<br/>Common examples of these type of tags are &lt;hr/> used for horizontal line.
-
 		</p>
+
+		<h3>Step two - HTML, HEAD and BODY: The three pillers of your document</h3>
+		<img src="./stock1/main2.jpg",alt="head and body tag">
+		<p>
+			These tags are essential for any HTML document. They parcel out the significant parts of your HTML code.
+			<ul>
+				<li> &lt;BODY>&lt;/BODY is placed below your &lt;HEAD> ta, and everything that you wnat to be displayedon your screen comes under this tag. Text, images, linkks, and pretty much anything your browser live inside this tag.</li>
+
+				<li>&lt;HTML>&lt;/HTML> wraps your entire code. Everything else in your HTML document needs to come inside these tags</li>
+
+				<li>&lt;HEAD>&lt;/HEAD> includes things like title, style, and scrips. Head is usually present at the top (hah!), just inside the &lt;/HTML> tag.</li>
+			</ul>
+		</p>
+
+		<h3>Step three - A few tags that'll make your page pretty</h3>
+		<p>
+			Now that you know how to set up the skeleton of your document, let's proceed with the things that will go inside your &lt;BODY> tag and do some magic!
+		</p>
+		<p>
+			Some basic text formatting tags:
+			<ul>
+				<li>&lt;b> &lt;/b makes your text look <b>bold</b></li>
+
+				<li>&lt;i>&lt;/i> makes you write in <i>cursive</i></li>
+
+				<li>&lt;u>&lt;/u> <u>underlines</u> what you just wrote</li>
+			</ul>
+			For, example this piece of code
+		</p>
+		<hr/>
+		<dl>
+			<dt>&lt;html></dt>
+			<dd>&lt;head> &lt;/head></dd>
+			<dd></dd>
+			<dd>
+				<dl>
+					<dt>&lt;body></dt>
+					<dd><br></dd>
+					<dd>&lt;i> I am italics! &lt;/i> &lt;br/></dd>
+					<dd>&lt;b> I am bold! &lt;/b> &lt;;br/></dd>
+					<dd>&lt;u> And me, well, I'm underlined! &lt;/u> &lt;br/></dd>
+					<br>
+				</dl>
+			</dd>
+			<dd>&lt;/body></dd>
+			<dt>&lt;/html></dt>
+		</dl>
+		<hr/>
+		<br>
+		<p>
+			Should prouduce something like this on your browser: Don't fret too much about the &lt;br/>. It's just for breaking the line so  that you can start from the next line. Enter key does little when it comes to changing lines in your HTML document. 
+		</p>
+		<img src="./stock1/a3.png", alt="code output" width="60%">
+		<h6><b>Tags to help you structure your content:</b></h6>
+		<ul>
+			<li>&lt;br/> breaks the line, making you continue to the next line.</li>
+			<li>&lt;p> stands for paragraph. it divides your content into paragraphs.</li>
+		</ul>
+		<p>
+			<i>Note: You need to use these tags as space and enter keys do very little when it comes to formatting content inside an HTML document.</i>
+		</p>
+		<br>
+		<h6>Heading Tags:</h6>
+		<p>
+			HTML provides you with six tags, from &lt;H1>&lt;H1> to &lt;H6>&lt;H6> to help you create different sized headers quickly.
+		</p>
+		<img src="./stock1/a2.png" alt="heading sizes">
+		<h6>Inserting an Image</h6>
+		<p>All that's good, but what fun without images on the webpage? Don't worry, &lt;IMG/> to the rescue! The image tag has a mandatory attribute called "source". Basically, it tells the browser where it should look for the image. The syntax goes something like:<br><br>
+			<i>&lt;img src="path_to_your_image"/></i>
+			<br><br>
+			Furthermore, it also has attributes like height and width that let you specify the height and width you want your image to take.
+		</p>
+		<h6>Lists:</h6>
+		<p>
+			HTML has two types of lists- ordered and unordered. Each item of your list has to be inclosed in a tag. The syntax for creating a list is fairly simple.
+		</p>
+		<p>Suppose you want to create a list like:</p>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+		<p>
+		The following code will easily do the job for you:
+		</p>
+		<hr/>
+		<dl>
+			<dt>&lt;ul></dt>
+				<dd>&lt;li> Item 1 &lt;/li></dd>
+				<dd>&lt;li> Item 2 &lt;/li></dd>
+				<dd>&lt;li> Item 3 &lt;/li></dd>
+			<dt>&lt;/ul></dt>
+		</dl>
+		<hr/>
+		<br>
+		<p>This, by the way, was an example of an unordered list. For an ordered list, all you need to do is replace &lt;ul> with &lt;ol> and &lt;/ul> with &lt;/ol>.
+
 
 	</div>
 
